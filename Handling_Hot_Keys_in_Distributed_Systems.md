@@ -331,5 +331,3 @@ A strong system design answer should proceed in this order:
 ---
 
 **Related notes:** [Scaling Write-Heavy Systems](Scaling_Write_Heavy_Systems.md) · [Scaling Read-Heavy Traffic](Scaling_Read_Traffic_Study_Notes.md) · [Database Scaling, Consistency, Messaging & Resilience](Database_Scaling_Consistency_Messaging_and_Resilience.md)
-
-*Based on the user-provided hot-key lesson transcript; reorganized and rewritten for study purposes. Add source attribution if the original creator or link is available.*
