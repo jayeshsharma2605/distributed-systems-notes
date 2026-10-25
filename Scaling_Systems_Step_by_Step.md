@@ -2,8 +2,6 @@
 
 *A practical guide to vertical scaling, horizontal scaling, stateless services, caching, database replication, sharding and background queues.*
 
-> These notes are independently written from the user-supplied scalability lesson transcript. The flowcharts are newly created learning diagrams. Example numbers illustrate design reasoning; they are not promises of real-world system capacity.
-
 ## Contents
 
 1. [What scalability really means](#1-what-scalability-really-means)
@@ -383,5 +381,3 @@ That suggests a problem worth investigating; it does not identify the problem by
 **Scaling is a feedback loop: observe the workload, find the limiting component, apply the smallest useful architectural change, and measure again.**
 
 ---
-
-*Source basis: the user-provided scalability transcript. This Markdown guide is an original explanatory adaptation with newly authored diagrams, reorganized examples and clearly marked supplementary operational considerations. No extended transcript passages are reproduced.*
