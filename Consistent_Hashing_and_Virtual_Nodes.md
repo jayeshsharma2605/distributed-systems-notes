@@ -2,7 +2,6 @@
 
 **From modulo hashing to a hash ring, with easy maths, routing examples, original diagrams and interview notes.**
 
-> This is a newly written learning guide based on the user-provided consistent-hashing transcript. Its explanations, tables, examples, diagrams and organization have been independently authored. Numbers and ring positions are illustrative, not actual hash outputs from a named algorithm.
 
 ## Contents
 
@@ -496,5 +495,3 @@ Using ring positions **100, 300, 500, 700, 900**:
 **Core takeaway:** Consistent hashing keeps most key assignments stable when servers join or leave. Virtual nodes usually improve distribution, but real systems still need careful handling of membership, data movement, replication and hot spots.
 
 ---
-
-*Source basis: user-provided consistent-hashing transcript. This guide independently rephrases the underlying technical concepts and includes newly authored examples, diagrams and explanatory cautions; it is not a reproduction of the transcript.*
