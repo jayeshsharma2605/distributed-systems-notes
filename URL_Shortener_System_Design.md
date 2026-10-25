@@ -349,5 +349,3 @@ The following are discussion extensions beyond the slide requirements, not claim
 - Monitor redirect latency, cache hit ratio, errors and queue lag.
 
 ---
-
-**Source:** *System Design Series 3*, slides 37–46. Related notes: [Database Scaling, Consistency, Messaging & Resilience](Database_Scaling_Consistency_Messaging_and_Resilience.md).
