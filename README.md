@@ -1,4 +1,4 @@
-# Distributed Systems — Study Notes
+# Distributed Systems
 
 A collection of easy-to-follow study notes about distributed systems and system design, with practical examples, trade-offs, and architecture diagrams.
 
