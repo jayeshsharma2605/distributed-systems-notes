@@ -5,6 +5,7 @@ A collection of easy-to-follow study notes about distributed systems and system 
 ## System Design Topics
 
 - [Introduction to System Design](Introduction_to_System_Design.md) — Requirements, core components, photo-upload and feed flows, trade-offs, evolution and interview approach.
+- [Scalability Explained — Step-by-Step System Scaling](Scaling_Systems_Step_by_Step.md) — Vertical and horizontal scaling, bottlenecks, stateless services, caching, replicas, sharding, queues and practical diagrams.
 
 - [Scaling Read-Heavy Traffic](Scaling_Read_Traffic_Study_Notes.md) — Database optimization, read replicas, caching, CDNs, hot keys, cache stampedes, and a Mermaid architecture diagram.
 - [Scaling Write-Heavy Systems](Scaling_Write_Heavy_Systems.md) — Write optimization, batching, durable queues, sharding, hot spots, aggregation, durability and a driver-location architecture.
