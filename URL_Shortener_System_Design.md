@@ -1,6 +1,5 @@
 # URL Shortener — System Design Exercise
 
-> Standalone exercise from **System Design Series 3**, slides 37–46, by Jayesh Sharma. Includes requirements, back-of-the-envelope estimates, API examples, data model, Base62 and readable Mermaid diagrams. The architecture diagrams are explanatory redraws of the slide topics.
 
 ## Contents
 - [1. Problem statement](#1-problem-statement)
