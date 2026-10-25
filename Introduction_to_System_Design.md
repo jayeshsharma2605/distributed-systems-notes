@@ -201,7 +201,7 @@ For example, a Like button creates several design questions: should the count be
 
 ## 8. System design interviews
 
-It describes an open-ended discussion, often around **45–60 minutes** for relevant engineering interviews, rather than a coding exercise with a single correct solution.
+It is an open-ended discussion, often around **45–60 minutes** for relevant engineering interviews, rather than a coding exercise with a single correct solution.
 
 A practical approach:
 
