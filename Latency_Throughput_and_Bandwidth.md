@@ -2,8 +2,6 @@
 
 **Understand performance with simple maths, intuitive examples, and system-design diagrams**
 
-> Original learning notes adapted from the user-provided performance transcript. Wording, organization, explanations and Mermaid diagrams are newly authored. Numerical examples are illustrative and use decimal KB/MB/GB unless noted.
-
 ## Contents
 
 1. [Three different performance questions](#1-three-different-performance-questions)
@@ -498,5 +496,3 @@ Such a goal is meaningful only when **both** throughput and latency are measured
 **Core takeaway:** Faster systems are not always those with the biggest network links. Measure how long each operation takes, how much work finishes, and which resource constrains the workload—then fix that bottleneck.
 
 ---
-
-*Source: User-supplied performance lesson transcript. This guide independently rephrases and organizes the ideas, includes original Mermaid diagrams and labels simplifying assumptions. It is not a verbatim transcription.*
