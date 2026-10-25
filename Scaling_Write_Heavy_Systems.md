@@ -2,8 +2,6 @@
 
 A practical guide to designing systems that receive a continuous stream of updates. Examples include location tracking, messaging, telemetry, engagement counters, and click events.
 
-> **About these notes:** This is an independently worded educational explanation based on the user-provided high-write-traffic lesson transcript. The diagrams, examples, structure and commentary are newly written. The source transcript does not identify an author or license; rewriting does not by itself guarantee freedom from copyright restrictions. Attribute the original lesson if its creator is known.
-
 ## Contents
 
 1. [What makes a system write-heavy?](#1-what-makes-a-system-write-heavy)
