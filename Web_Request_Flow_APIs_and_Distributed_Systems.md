@@ -553,5 +553,3 @@ flowchart TD
 - How would you implement retry, deduplication and status tracking in a notification service?
 
 ---
-
-**Source:** *System Design series -2* PowerPoint presentation by Jayesh Sharma, 45 slides. The notification architecture and additional practical API examples are clearly marked as explanatory extensions.
