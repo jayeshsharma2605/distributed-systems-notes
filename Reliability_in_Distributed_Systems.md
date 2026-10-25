@@ -2,7 +2,6 @@
 
 **Correct results, safe recovery, controlled failures and dependable user experiences**
 
-> Original study notes based on the supplied reliability transcript. This guide uses fresh explanations, teaching examples and newly written Mermaid diagrams rather than copying the narration. Numerical targets are illustrative unless explicitly stated otherwise.
 
 ## Contents
 
@@ -412,5 +411,3 @@ No one layer is sufficient by itself.
 **Reliable systems don't only stay online; they deliver correct outcomes, limit the consequences of faults, and recover predictably.**
 
 ---
-
-*Source: User-supplied reliability transcript. The text is restructured and independently paraphrased, with original teaching diagrams. Numerical benchmarks and additional implementation cautions are clearly identified as illustrative or supplementary.*
