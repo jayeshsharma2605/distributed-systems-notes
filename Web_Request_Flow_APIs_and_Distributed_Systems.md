@@ -1,4 +1,4 @@
-# System Design Series 2 — Request Journey, APIs, Communication & Distributed Databases
+# System Design — Request Journey, APIs, Communication & Distributed Databases
 
 > Study notes adapted from **System Design series -2**, by Jayesh Sharma (45-slide presentation). Wording is organized for reading on GitHub. Mermaid diagrams are explanatory redraws of the presentation concepts, not pixel-for-pixel reproductions of slide artwork.
 
