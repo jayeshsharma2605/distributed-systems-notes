@@ -2,7 +2,6 @@
 
 *A beginner-friendly guide to components, requirements, architecture decisions and trade-offs.*
 
-> These notes are an original rewrite of the supplied introductory transcript. The diagrams are newly drawn examples, not reproductions of the video's visuals.
 
 ## Contents
 
@@ -202,7 +201,7 @@ For example, a Like button creates several design questions: should the count be
 
 ## 8. System design interviews
 
-The transcript describes an open-ended discussion, often around **45–60 minutes** for relevant engineering interviews, rather than a coding exercise with a single correct solution.
+It describes an open-ended discussion, often around **45–60 minutes** for relevant engineering interviews, rather than a coding exercise with a single correct solution.
 
 A practical approach:
 
