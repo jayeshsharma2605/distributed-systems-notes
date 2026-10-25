@@ -2,8 +2,6 @@
 
 **Simple definitions, realistic decisions, easy maths and original architecture diagrams**
 
-> This guide is an independently written adaptation of the user-provided CAP lesson transcript. Explanations, diagrams, comparisons and exercises are newly organized and worded rather than transcribed. The region names and product-price scenario are illustrative.
-
 ## Contents
 
 1. [The online store problem](#1-the-online-store-problem)
@@ -365,5 +363,3 @@ CAP explains a limitation of replicated distributed data during a communication 
 **Final takeaway:** **Choose consistency behavior based on the business operation and what goes wrong if nodes disagree—not on a slogan about databases.**
 
 ---
-
-*Source basis: user-supplied CAP/PACELC transcript. This learning chapter is newly written and organized, with independent diagrams and explicitly labeled supplementary engineering considerations. It does not reproduce extended passages from the transcript.*
