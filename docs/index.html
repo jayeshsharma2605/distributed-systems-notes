@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Clear, practical distributed systems and system design study notes with architecture diagrams.">
+  <meta name="theme-color" content="#0e172b">
+  <title>Distributed Systems Notes | Study Library</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <style>
+    :root{color-scheme:light;--nav:#0f1d34;--ink:#17253b;--muted:#64748b;--line:#dfE6ef;--bg:#f6f8fc;--panel:#fff;--accent:#1468b7;--accent-bg:#e8f3ff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--bg);line-height:1.75}
+    button,input{font:inherit}
+    .top{background:var(--nav);color:#fff;padding:24px max(24px,calc((100vw - 1260px)/2));display:flex;justify-content:space-between;align-items:center;gap:20px}
+    .brand{font-size:1.2rem;font-weight:750;letter-spacing:-.02em}.sub{color:#b8c8dc;font-size:.86rem}
+    .layout{max-width:1290px;margin:0 auto;display:grid;grid-template-columns:280px minmax(0,1fr);gap:24px;padding:28px 22px 70px}
+    aside{align-self:start;position:sticky;top:16px;background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:18px}
+    .eyebrow{text-transform:uppercase;font-size:.71rem;letter-spacing:.12em;font-weight:800;color:var(--muted)}
+    input{width:100%;border:1px solid var(--line);border-radius:9px;padding:9px 12px;margin:13px 0 12px;color:var(--ink);background:#fff}
+    .nav-link{display:block;text-decoration:none;border-radius:9px;color:#31435f;padding:10px 12px;margin-bottom:4px;font-size:.91rem;line-height:1.45}
+    .nav-link:hover,.nav-link:focus{background:#f2f6fd;color:var(--accent)}.nav-link.active{background:var(--accent-bg);color:#075594;font-weight:720}
+    .main{min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:clamp(20px,4vw,48px);min-height:75vh}
+    .breadcrumbs{font-size:.79rem;color:var(--muted);margin-bottom:20px}.intro{font-size:1.07rem;color:#526782}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:13px;margin:25px 0}
+    .topic{background:#fafcff;border:1px solid var(--line);border-radius:12px;padding:19px;cursor:pointer;text-align:left;line-height:1.4;color:var(--ink);font-weight:680}
+    .topic:hover{border-color:#9fc4e9;background:#eff7ff}.topic small{display:block;font-weight:400;color:var(--muted);margin-top:8px}
+    article{overflow-wrap:anywhere}article h1{font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.2;letter-spacing:-.025em;margin:12px 0 20px}article h2{font-size:1.58rem;line-height:1.33;margin:42px 0 14px;border-bottom:1px solid var(--line);padding-bottom:8px}article h3{font-size:1.15rem;margin:24px 0 10px}
+    article p,article li{max-width:85ch}article a{color:var(--accent)}article table{border-collapse:collapse;width:100%;font-size:.9rem;margin:18px 0}article th{background:#f0f4fa;text-align:left}article td,article th{padding:10px;border:1px solid var(--line);vertical-align:top}
+    .table-wrap{overflow-x:auto;max-width:100%}article blockquote{border-left:4px solid #77b7ec;background:#f4faff;padding:6px 20px;margin:20px 0;color:#3f5677}
+    article code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.88em;background:#eef3f8;padding:2px 5px;border-radius:4px}
+    article pre:not(.mermaid){overflow-x:auto;padding:18px;background:#142239;color:#ecf2fb;border-radius:10px}article pre:not(.mermaid) code{background:transparent;color:inherit;padding:0}
+    .diagram{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:#fff;padding:15px;margin:24px 0;text-align:center}.mermaid{min-width:fit-content}
+    .footer{font-size:.8rem;color:var(--muted);border-top:1px solid var(--line);margin-top:40px;padding-top:18px}
+    #mobileToggle{display:none;background:#203957;color:white;border:1px solid #466380;border-radius:8px;padding:8px 12px}
+    @media(max-width:800px){.layout{display:block;padding:14px 12px 45px}.top{padding:15px 18px}.sub{font-size:.72rem}.main{padding:20px;margin-top:12px}aside{position:static;display:none}aside.open{display:block}#mobileToggle{display:block}article table{font-size:.81rem}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div><div class="brand">Distributed Systems · Study Library</div><div class="sub">Simple explanations · Architecture diagrams · System design practice</div></div>
+    <button id="mobileToggle" type="button" aria-expanded="false" aria-controls="sidebar">Browse topics</button>
+  </header>
+  <div class="layout">
+    <aside id="sidebar" aria-label="Study topic navigation">
+      <div class="eyebrow">Study topics</div>
+      <input type="search" id="filter" placeholder="Filter topics…" aria-label="Filter topics">
+      <nav id="navigation"></nav>
+    </aside>
+    <main class="main">
+      <div class="breadcrumbs" id="crumbs">Study Library</div>
+      <article id="article" aria-live="polite">
+        <h1>Distributed Systems, Explained</h1>
+        <p class="intro">Practical notes that connect distributed systems concepts to real applications. Choose a topic to read step-by-step explanations and explore architecture diagrams.</p>
+        <div class="cards" id="cards"></div>
+      </article>
+      <footer class="footer">Educational study notes · Diagrams rendered with Mermaid · Public content may be copied or saved by visitors.</footer>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js" defer></script>
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.12.2/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({startOnLoad:false,theme:'default',securityLevel:'strict',flowchart:{useMaxWidth:false},sequence:{useMaxWidth:false}});
+    const FILE_ROOT = 'https://raw.githubusercontent.com/jayeshsharma2605/distributed-systems-notes/main/';
+    const topics = [
+      ['Scaling Read-Heavy Traffic','Scaling_Read_Traffic_Study_Notes.md','Caching, read replicas and CDNs'],
+      ['Scaling Write-Heavy Systems','Scaling_Write_Heavy_Systems.md','Queues, sharding and write optimization'],
+      ['Handling Hot Keys','Handling_Hot_Keys_in_Distributed_Systems.md','Hot partitions and popular keys'],
+      ['Handling Traffic Spikes','Handling_Traffic_Spikes_in_Distributed_Systems.md','Autoscaling, admission and resilience'],
+      ['Web Requests, APIs & Distributed Systems','Web_Request_Flow_APIs_and_Distributed_Systems.md','DNS, HTTPS, REST APIs and CAP'],
+      ['Database Scaling, Consistency & Messaging','Database_Scaling_Consistency_Messaging_and_Resilience.md','Replication, queues and fault tolerance'],
+      ['URL Shortener — Design Exercise','URL_Shortener_System_Design.md','Requirements, sizing and Base62']
+    ];
+    const nav=document.querySelector('#navigation'),cards=document.querySelector('#cards'),article=document.querySelector('#article');
+    const escapeHtml=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    function href(f){return '#/'+encodeURIComponent(f)}
+    function getTarget(){const raw=location.hash.startsWith('#/')?decodeURIComponent(location.hash.slice(2)):'';return topics.find(t=>t[1]===raw)}
+    function menu(query=''){
+      nav.replaceChildren();
+      topics.filter(t=>t[0].toLowerCase().includes(query.toLowerCase())).forEach(t=>{
+        const a=document.createElement('a');a.className='nav-link';a.textContent=t[0];a.href=href(t[1]);nav.append(a)
+      });
+      if(!nav.children.length)nav.textContent='No matching topics';
+    }
+    function home(){
+      document.querySelector('#crumbs').textContent='Home / All topics';
+      article.innerHTML='<h1>Distributed Systems, Explained</h1><p class="intro">Browse clear explanations, trade-offs, realistic examples, and diagrams. Select a topic to get started.</p><div class="cards" id="cards"></div>';
+      topics.forEach(t=>{
+        const b=document.createElement('button');b.className='topic';b.type='button';
+        b.innerHTML=escapeHtml(t[0])+'<small>'+escapeHtml(t[2])+'</small>';
+        b.addEventListener('click',()=>location.hash=href(t[1]));article.querySelector('.cards').append(b)
+      });
+    }
+    function wrapTables(){article.querySelectorAll('table').forEach(table=>{const wrap=document.createElement('div');wrap.className='table-wrap';table.replaceWith(wrap);wrap.append(table)})}
+    function parseMarkdown(md){
+      const diagrams=[];
+      const prepared=md.replace(/```mermaid\s*\n([\s\S]*?)```/g,(_whole,src)=>{
+        const n=diagrams.push(src)-1;return '\n\nMERMAID_PLACEHOLDER_'+n+'\n\n'
+      });
+      let html=window.marked.parse(prepared,{gfm:true,breaks:false});
+      diagrams.forEach((src,i)=>{html=html.replace('MERMAID_PLACEHOLDER_'+i,'<div class="diagram"><pre class="mermaid">'+escapeHtml(src)+'</pre></div>')});
+      return html;
+    }
+    let revision=0;
+    async function render(){
+      const t=getTarget();menu(document.querySelector('#filter').value);nav.querySelectorAll('a').forEach(a=>a.classList.toggle('active',!!t&&a.getAttribute('href')===href(t[1])));
+      document.querySelector('#sidebar').classList.remove('open');document.querySelector('#mobileToggle').setAttribute('aria-expanded','false');
+      if(!t){document.title='Distributed Systems Notes | Study Library';home();return}
+      const current=++revision;
+      document.title=t[0]+' | Distributed Systems Notes';
+      document.querySelector('#crumbs').textContent='Study Library / '+t[0];
+      article.innerHTML='<h1>'+escapeHtml(t[0])+'</h1><p>Loading study notes…</p>';
+      try{
+        const response=await fetch(FILE_ROOT+encodeURIComponent(t[1]),{cache:'no-cache'});
+        if(!response.ok)throw new Error('The Markdown file is unavailable ('+response.status+').');
+        const raw=await response.text();
+        if(current!==revision)return;
+        if(!window.marked)throw new Error('Markdown renderer failed to load. Refresh the page to try again.');
+        article.innerHTML=parseMarkdown(raw);wrapTables();
+        try{await mermaid.run({nodes:article.querySelectorAll('.mermaid')})}
+        catch(e){console.warn('One or more diagrams could not render:',e)}
+        window.scrollTo({top:0,behavior:'instant'});
+      }catch(e){if(current===revision)article.innerHTML='<h1>Unable to load the article</h1><p>'+escapeHtml(e.message)+'</p><p>Please try again later.</p>'}
+    }
+    document.querySelector('#filter').addEventListener('input',e=>menu(e.target.value));
+    document.querySelector('#mobileToggle').addEventListener('click',()=>{const side=document.querySelector('#sidebar');const open=side.classList.toggle('open');document.querySelector('#mobileToggle').setAttribute('aria-expanded',String(open))});
+    window.addEventListener('hashchange',render);
+    render();
+  </script>
+</body>
+</html>
