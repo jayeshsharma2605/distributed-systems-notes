@@ -1,7 +1,5 @@
 # Database Scaling, Consistency, Messaging & Resilience
 
-> Study notes from **System Design Series 3** (slides 2–36), by Jayesh Sharma. Concepts are explained in simple language, with GitHub-renderable Mermaid diagrams. The URL Shortener exercise from slides 37–46 is documented separately in [URL Shortener System Design](URL_Shortener_System_Design.md).
-
 ## Contents
 - [1. Database scaling](#1-database-scaling)
 - [2. Replication and read replicas](#2-replication-and-read-replicas)
@@ -314,5 +312,3 @@ flowchart LR
 12. What do closed, open and half-open mean in a circuit breaker?
 
 ---
-
-**Source:** *System Design Series 3*, slides 2–36. [Separate URL Shortener exercise](URL_Shortener_System_Design.md).
