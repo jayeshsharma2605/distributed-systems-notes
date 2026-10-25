@@ -325,7 +325,3 @@ A strong answer explains *why* each control is necessary, not just the names of 
 Reliable spike handling is not one scaling trick. A well-designed system combines **preparation**, **caching**, **traffic admission**, **work buffering**, and **failure containment**, so the most important user actions continue to work when demand rises suddenly.
 
 ---
-
-### Source and attribution
-
-Adapted into original study notes from the transcript uploaded for this repository (lesson on **handling sudden traffic spikes**). The prose, comparisons, and Mermaid diagrams here are independently composed for explanation; the original video narration is not reproduced. Examples and thresholds are illustrative rather than promises of real-world capacity.
