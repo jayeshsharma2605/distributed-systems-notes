@@ -2,7 +2,6 @@
 
 **Simple maths, memorable numbers, and practical capacity planning**
 
-> These are original study notes based on the supplied capacity-estimation lesson transcript. The examples use illustrative assumptions; they are not measured production benchmarks. Equations and decisions are explained in fresh wording rather than reproducing the narration.
 
 ## Contents
 
@@ -513,5 +512,3 @@ flowchart LR
 | Feed servers | ~86 at 70% target | Load balancing and scale-out |
 
 ---
-
-*Adapted and substantially rewritten from the user-provided system-design capacity-estimation transcript. Numerical examples are teaching assumptions, not production SLAs or universal hardware performance ratings.*
