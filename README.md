@@ -18,3 +18,4 @@ A collection of easy-to-follow study notes about distributed systems and system 
 - [Database Scaling, Consistency, Messaging & Resilience](Database_Scaling_Consistency_Messaging_and_Resilience.md) — Replication, sharding, consistency models, queues, pub/sub, retries, DLQs, failover and circuit breakers.
 - [URL Shortener — System Design Exercise](URL_Shortener_System_Design.md) — Requirements, QPS/storage estimates, APIs, read/write flows, database design and Base62 encoding.
 - [Back-of-the-Envelope Capacity Estimation](Back_of_the_Envelope_Capacity_Estimation.md) — Easy-to-remember numbers, simplified RPS maths, latency, storage, bandwidth, cache sizing, server capacity and worked examples.
+- [Consistent Hashing and Virtual Nodes](Consistent_Hashing_and_Virtual_Nodes.md) — Modulo hashing, hash-ring routing, server changes, vnodes, replicas, binary search and easy key-movement maths.
