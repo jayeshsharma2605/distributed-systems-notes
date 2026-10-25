@@ -2,7 +2,6 @@
 
 Practical system design notes on **read hot keys, write hot keys, skewed partitions, counters, and flash-sale inventory**.
 
-> These are newly structured, independently worded educational notes based on the supplied hot-key lesson transcript. Diagrams are original conceptual illustrations. Rewriting helps avoid copying the narration, but does not guarantee that all copyright considerations are resolved. Add the original creator/source attribution when known.
 
 ## Contents
 
