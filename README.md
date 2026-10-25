@@ -4,6 +4,8 @@ A collection of easy-to-follow study notes about distributed systems and system 
 
 ## System Design Topics
 
+- [Introduction to System Design](Introduction_to_System_Design.md) — Requirements, core components, photo-upload and feed flows, trade-offs, evolution and interview approach.
+
 - [Scaling Read-Heavy Traffic](Scaling_Read_Traffic_Study_Notes.md) — Database optimization, read replicas, caching, CDNs, hot keys, cache stampedes, and a Mermaid architecture diagram.
 - [Scaling Write-Heavy Systems](Scaling_Write_Heavy_Systems.md) — Write optimization, batching, durable queues, sharding, hot spots, aggregation, durability and a driver-location architecture.
 - [Handling Hot Keys in Distributed Systems](Handling_Hot_Keys_in_Distributed_Systems.md) — Read and write hot keys, local caching, cache replication, sharded counters, Kafka partition skew, flash-sale inventory and detection strategies.
