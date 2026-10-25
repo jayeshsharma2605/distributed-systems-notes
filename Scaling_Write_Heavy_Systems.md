@@ -377,4 +377,3 @@ A clear explanation is more persuasive than listing technologies:
 
 **Related study material:** [Scaling Read-Heavy Traffic](Scaling_Read_Traffic_Study_Notes.md) · [Database Scaling, Consistency, Messaging & Resilience](Database_Scaling_Consistency_Messaging_and_Resilience.md)
 
-*Adapted as original educational study notes from the supplied high-write-traffic lesson transcript. If the original creator or source URL is available, add a source acknowledgement.*
