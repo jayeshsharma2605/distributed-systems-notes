@@ -246,5 +246,3 @@ Understanding the building blocks and their trade-offs is more useful than memor
 **Takeaway:** Start with requirements, assign clear responsibilities, trace how requests and data move, and justify each architectural trade-off.
 
 ---
-
-*Source basis: user-provided introductory system-design transcript. Explanations, layout, comparisons and Mermaid diagrams are newly authored. The source's concepts are paraphrased rather than its narration reproduced.*
