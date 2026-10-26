@@ -89,9 +89,15 @@
     const nav=document.querySelector('#navigation'),cards=document.querySelector('#cards'),article=document.querySelector('#article');
     const escapeHtml=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
     function href(f){return '#/'+encodeURIComponent(f)}
+    const legacyPaths={
+      'Networking/OSI_Model/OSI_Model_7_Layers.md':'Networking/OSI_Model_7_Layers.md',
+      'Networking/IP_Address/IP_Addressing_Explained.md':'Networking/IP_Addressing_Explained.md',
+      'Networking/TCP_vs_UDP/TCP_vs_UDP_Explained.md':'Networking/TCP_vs_UDP_Explained.md',
+      'Networking/HTTP_vs_HTTPS/HTTP_vs_HTTPS_Explained.md':'Networking/HTTP_vs_HTTPS_Explained.md'
+    };
     function getTarget(){
       const raw=location.hash.startsWith('#/')?decodeURIComponent(location.hash.slice(2).split('?section=')[0]):'';
-      return topics.find(t=>t[1]===raw);
+      return topics.find(t=>t[1]===(legacyPaths[raw]||raw));
     }
     function getSection(){
       const marker='?section=';
@@ -156,10 +162,6 @@
           if(!nav.querySelector('[data-group="networking"]')){
             const group=document.createElement('div');group.className='nav-category';group.dataset.group='networking';group.textContent='Networking';nav.append(group);
           }
-
-
-
-
         } else if(t[1].startsWith('Load_Balancing/')){
           if(!nav.querySelector('[data-group="load-balancing"]')){
             const group=document.createElement('div');group.className='nav-category';group.dataset.group='load-balancing';group.textContent='Load Balancing';nav.append(group);
