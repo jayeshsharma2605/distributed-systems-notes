@@ -1,5 +1,7 @@
 # Scaling Write-Heavy Systems — Practical System Design Notes
 
+*Distributed Systems Study Library · Author: Jayesh Sharma*
+
 A practical guide to designing systems that receive a continuous stream of updates. Examples include location tracking, messaging, telemetry, engagement counters, and click events.
 
 ## Contents
