@@ -38,6 +38,8 @@ A collection of easy-to-follow study notes about distributed systems and system 
 
 ## System Design Topics
 
+- [Counting at Scale — Distributed Counters, HyperLogLog and Trending](Counting_at_Scale_Distributed_Counters_and_Streaming.md) — Atomic and sharded counters, Redis, Kafka/Flink aggregates, exact ad clicks, HyperLogLog, Count-Min Sketch, sliding windows and top-K topics.
+
 - [Distributed Unique ID Generation — UUID, Snowflake and Base62](Distributed_Unique_ID_Generation_System_Design.md) — Auto-increment and ticket servers, UUIDv4/v7, Snowflake bit layouts and clocks, ID blocks, Base62 and opaque IDs.
 
 - [Location-Based System Design — Geohashes, Quadtrees and Nearby Search](Location_Based_System_Design_Geohash_and_Quadtrees.md) — Static versus moving location data, geospatial indexing, Redis GEO, PostGIS, nearest-driver matching, geofencing and hotspots.
