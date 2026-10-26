@@ -38,6 +38,8 @@ A collection of easy-to-follow study notes about distributed systems and system 
 
 ## System Design Topics
 
+- [Idempotency and Deduplication — Explained Simply](Idempotency_and_Deduplication_in_Distributed_Systems.md) — Safe retries, API idempotency keys, atomic uniqueness, message consumers, Kafka, Bloom filters and content hashing.
+
 - [Video and Audio Streaming at Scale — Explained Simply](Video_and_Audio_Streaming_at_Scale.md) — Encoding ladders, HLS/DASH, ABR playback, CDNs, live streaming, DRM, playback metrics and system design interviews.
 
 - [Large File Uploads and Downloads — Explained Simply](Large_File_Uploads_and_Downloads_System_Design.md) — Object storage and metadata, direct uploads, multipart resume, checksums, processing workers, CDN, Range requests and file synchronization.
