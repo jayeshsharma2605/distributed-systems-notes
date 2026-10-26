@@ -1,5 +1,7 @@
 # Latency vs Throughput vs Bandwidth
 
+*Distributed Systems Study Library · Author: Jayesh Sharma*
+
 **Understand performance with simple maths, intuitive examples, and system-design diagrams**
 
 ## Contents
