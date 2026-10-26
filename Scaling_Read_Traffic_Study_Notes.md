@@ -1,5 +1,7 @@
 # Scaling Read Traffic — Study Notes
 
+*Distributed Systems Study Library · Author: Jayesh Sharma*
+
 ## 1. What is read-heavy traffic?
 
 A system is read-heavy when users read data far more often than they update it. The read-to-write ratio may be 100:1 or higher.
