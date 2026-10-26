@@ -38,6 +38,8 @@ A collection of easy-to-follow study notes about distributed systems and system 
 
 ## System Design Topics
 
+- [Designing Real-Time Updates at Scale — Explained Simply](Designing_Real_Time_Updates_at_Scale.md) — Choosing polling, SSE and WebSockets, gateway fan-out, durable replay, capacity planning and interview architecture.
+
 - [Introduction to System Design](Introduction_to_System_Design.md) — Requirements, core components, photo-upload and feed flows, trade-offs, evolution and interview approach.
 - [Scalability Explained — Step-by-Step System Scaling](Scaling_Systems_Step_by_Step.md) — Vertical and horizontal scaling, bottlenecks, stateless services, caching, replicas, sharding, queues and practical diagrams.
 - [High Availability and Failover](High_Availability_and_Failover.md) — Uptime maths, availability nines, redundancy, active–active/passive, standby recovery, multi-zone resilience and failure isolation.
