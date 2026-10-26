@@ -1,5 +1,7 @@
 # System Design — Request Journey, APIs, Communication & Distributed Databases
 
+*Distributed Systems Study Library · Author: Jayesh Sharma*
+
 ## Contents
 
 1. [How a web request travels](#1-how-a-web-request-travels)
