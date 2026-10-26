@@ -16,6 +16,8 @@ A collection of easy-to-follow study notes about distributed systems and system 
 
 - [DNS Resolution — Explained Simply](Networking/DNS_Resolution_Explained.md) — Root, TLD and authoritative name servers, recursive/iterative lookups, caches, TTL, DNS records and propagation.
 
+- [Forward Proxy vs Reverse Proxy — Explained Simply](Networking/Forward_Proxy_vs_Reverse_Proxy.md) — Client-side vs server-side proxies, VPN comparison, TLS termination, caching, routing, security and diagrams.
+
 ## Load Balancing
 
 - [What Are Load Balancers? — Layer 4 vs Layer 7](Load_Balancing/What_Are_Load_Balancers.md) — Routing, OSI layers, session affinity, health checks, TLS termination, draining, availability and original Mermaid diagrams.
