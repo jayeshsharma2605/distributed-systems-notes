@@ -64,6 +64,7 @@
     const FILE_ROOT = 'https://raw.githubusercontent.com/jayeshsharma2605/distributed-systems-notes/main/';
     const topics = [
       ['OSI Model — 7 Layers','Networking/OSI_Model/OSI_Model_7_Layers.md','Networking › OSI Model: layers, encapsulation, HTTPS and troubleshooting'],
+      ['IP Addressing — IPv4, IPv6 and CIDR','Networking/IP_Address/IP_Addressing_Explained.md','Networking › IP Address: subnetting, NAT, VPC and DNS'],
       ['What Are Load Balancers? — L4 vs L7','Load_Balancing/What_Are_Load_Balancers.md','Load Balancing: routing, health checks, TLS and high availability'],
       ['Load Balancing Algorithms','Load_Balancing/Load_Balancing_Algorithms.md','Static, dynamic, hash-based, locality and adaptive algorithms'],
       ['DNS Load Balancing','Load_Balancing/DNS_Load_Balancing.md','DNS, regional routing, TTL, weighted DNS and failover'],
@@ -155,6 +156,9 @@
           }
           if(t[1].startsWith('Networking/OSI_Model/')&&!nav.querySelector('[data-group="osi-model"]')){
             const sub=document.createElement('div');sub.className='nav-subcategory';sub.dataset.group='osi-model';sub.textContent='OSI Model';nav.append(sub);
+          }
+          if(t[1].startsWith('Networking/IP_Address/')&&!nav.querySelector('[data-group="ip-address"]')){
+            const sub=document.createElement('div');sub.className='nav-subcategory';sub.dataset.group='ip-address';sub.textContent='IP Address';nav.append(sub);
           }
         } else if(t[1].startsWith('Load_Balancing/')){
           if(!nav.querySelector('[data-group="load-balancing"]')){
