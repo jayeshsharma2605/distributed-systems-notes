@@ -4,8 +4,6 @@
 
 **A beginner-friendly explanation of client-side and server-side proxies, their uses, trade-offs, and system-design applications.**
 
-> Original educational adaptation of the transcript supplied for this topic. The prose, examples, diagrams and comparisons are newly authored; technical clarifications, such as HTTPS CONNECT tunneling, are supplemental context.
-
 ## Contents
 
 - [1. What is a proxy?](#1-what-is-a-proxy)
