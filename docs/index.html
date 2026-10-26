@@ -17,7 +17,7 @@
     aside{align-self:start;position:sticky;top:16px;background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:18px}
     .eyebrow{text-transform:uppercase;font-size:.71rem;letter-spacing:.12em;font-weight:800;color:var(--muted)}
     input{width:100%;border:1px solid var(--line);border-radius:9px;padding:9px 12px;margin:13px 0 12px;color:var(--ink);background:#fff}
-    .nav-category{font-size:.76rem;font-weight:800;color:#3a5e85;text-transform:uppercase;letter-spacing:.08em;margin:18px 8px 5px}.nav-category:first-child{margin-top:4px}.nav-subcategory{font-size:.83rem;font-weight:700;color:#526782;margin:7px 8px 5px 18px}.nav-subcategory+.nav-link{margin-left:15px}
+    .nav-category{font-size:.76rem;font-weight:800;color:#3a5e85;text-transform:uppercase;letter-spacing:.08em;margin:18px 8px 5px}.nav-category:first-child{margin-top:4px}.nav-subcategory{font-size:.83rem;font-weight:700;color:#526782;margin:7px 8px 5px 18px}.nav-subgroup{margin-left:18px;padding-left:10px;border-left:2px solid #dbe5f1}.nav-subgroup .nav-link{font-size:.88rem;padding:9px 10px}
     .nav-link{display:block;text-decoration:none;border-radius:9px;color:#31435f;padding:10px 12px;margin-bottom:4px;font-size:.91rem;line-height:1.45}
     .nav-link:hover,.nav-link:focus{background:#f2f6fd;color:var(--accent)}.nav-link.active{background:var(--accent-bg);color:#075594;font-weight:720}
     .main{min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:clamp(20px,4vw,48px);min-height:75vh}
@@ -222,11 +222,12 @@
           }
           if(t[1].startsWith('Communication_Patterns/Real-Time Communication/')&&!nav.querySelector('[data-group="real-time-communication"]')){
             const sub=document.createElement('div');sub.className='nav-subcategory';sub.dataset.group='real-time-communication';sub.textContent='Real-Time Communication';nav.append(sub);
+            const list=document.createElement('div');list.className='nav-subgroup';list.dataset.group='real-time-links';nav.append(list);
           }
         } else if(!nav.querySelector('[data-group="system-design"]')){
           const group=document.createElement('div');group.className='nav-category';group.dataset.group='system-design';group.textContent='System Design';nav.append(group);
         }
-        const a=document.createElement('a');a.className='nav-link';a.textContent=t[0];a.href=href(t[1]);nav.append(a)
+        const a=document.createElement('a');a.className='nav-link';a.textContent=t[0];a.href=href(t[1]);const parent=t[1].startsWith('Communication_Patterns/Real-Time Communication/')?nav.querySelector('[data-group="real-time-links"]'):null;(parent||nav).append(a)
       });
       if(!nav.children.length)nav.textContent='No matching topics';
     }
