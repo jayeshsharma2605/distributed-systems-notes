@@ -4,8 +4,6 @@
 
 **Understand domain lookups, root/TLD/authoritative servers, caching, TTL, DNS records, and DNS updates using simple examples.**
 
-> Based on the DNS-resolution transcript supplied for this chapter. All prose, examples, tables and diagrams are independently written for learning; the source is not reproduced verbatim. Additional practical nuances are identified where they go beyond its simplified walkthrough.
-
 ## Contents
 
 - [1. What is DNS?](#1-what-is-dns)
