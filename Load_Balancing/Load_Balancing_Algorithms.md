@@ -4,7 +4,6 @@
 
 *Distributed Systems Study Library · Author: Jayesh Sharma*
 
-> This is an independently written study guide based on the user-supplied load-balancing algorithms transcript. All explanations, worked examples, tables and Mermaid diagrams here are newly authored, not copied screenshots or narration. Specific vendor support can vary by product version and configuration.
 
 ## Contents
 
@@ -473,5 +472,3 @@ Direct modulo routing from **4 servers to 5** can move around **80%** of keys fo
 **Final takeaway:** There is no universally best load-balancing algorithm. Start with the workload and routing requirements, then use measured performance, health checks and capacity to validate your choice.
 
 ---
-
-*Source basis: user-supplied load-balancing-algorithms transcript. This chapter uses original writing and newly created Mermaid diagrams rather than reproducing the narration or existing visuals.*
