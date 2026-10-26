@@ -4,7 +4,6 @@
 
 **An approachable guide to real-time, bidirectional communication, WebSocket handshakes, frames, horizontal scaling and reliable recovery.**
 
-> Independently written study material based on the user-supplied WebSockets transcript. Wording, examples, tables and Mermaid diagrams are original. Additional security and production-design clarifications are presented separately as explanatory context.
 
 ## Contents
 
