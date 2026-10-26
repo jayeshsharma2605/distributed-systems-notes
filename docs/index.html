@@ -81,7 +81,40 @@
     const nav=document.querySelector('#navigation'),cards=document.querySelector('#cards'),article=document.querySelector('#article');
     const escapeHtml=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
     function href(f){return '#/'+encodeURIComponent(f)}
-    function getTarget(){const raw=location.hash.startsWith('#/')?decodeURIComponent(location.hash.slice(2)):'';return topics.find(t=>t[1]===raw)}
+    function getTarget(){
+      const raw=location.hash.startsWith('#/')?decodeURIComponent(location.hash.slice(2).split('?section=')[0]):'';
+      return topics.find(t=>t[1]===raw);
+    }
+    function getSection(){
+      const marker='?section=';
+      const i=location.hash.indexOf(marker);
+      if(i<0)return '';
+      try{return decodeURIComponent(location.hash.slice(i+marker.length))}catch{return ''}
+    }
+    function prepareSectionLinks(topic){
+      // Marked 15 does not automatically assign GitHub-style IDs to headings.
+      // Use the existing Markdown TOC anchors to name matching article headings.
+      const headings=[...article.querySelectorAll('h1,h2,h3,h4,h5,h6')];
+      const toc=[...article.querySelectorAll('a[href^="#"]')];
+      const slug=text=>text.toLowerCase().trim().replace(/[^\p{L}\p{N}\s-]/gu,'').replace(/\s+/g,'-');
+      const used=new Set();
+      headings.forEach(h=>{
+        const base=slug(h.textContent)||'section';
+        let name=base,n=1;
+        while(used.has(name))name=base+'-'+n++;
+        used.add(name);h.id=name;
+      });
+      toc.forEach(a=>{
+        const target=a.getAttribute('href').slice(1);
+        if(!target)return;
+        a.setAttribute('href',href(topic[1])+'?section='+encodeURIComponent(target));
+      });
+    }
+    function scrollToSection(){
+      const slug=getSection();if(!slug)return;
+      const heading=document.getElementById(slug);
+      if(heading)heading.scrollIntoView({behavior:'instant',block:'start'});
+    }
     function menu(query=''){
       nav.replaceChildren();
       topics.filter(t=>t[0].toLowerCase().includes(query.toLowerCase())).forEach(t=>{
@@ -123,10 +156,10 @@
         const raw=await response.text();
         if(current!==revision)return;
         if(!window.marked)throw new Error('Markdown renderer failed to load. Refresh the page to try again.');
-        article.innerHTML=parseMarkdown(raw);wrapTables();
+        article.innerHTML=parseMarkdown(raw);wrapTables();prepareSectionLinks(t);
         try{await mermaid.run({nodes:article.querySelectorAll('.mermaid')})}
         catch(e){console.warn('One or more diagrams could not render:',e)}
-        window.scrollTo({top:0,behavior:'instant'});
+        if(getSection())scrollToSection();else window.scrollTo({top:0,behavior:'instant'});
       }catch(e){if(current===revision)article.innerHTML='<h1>Unable to load the article</h1><p>'+escapeHtml(e.message)+'</p><p>Please try again later.</p>'}
     }
     document.querySelector('#filter').addEventListener('input',e=>menu(e.target.value));
