@@ -1,9 +1,8 @@
 # What Are Load Balancers? — Layer 4 vs Layer 7
 
+*Distributed Systems Study Library · Author: Jayesh Sharma*
+
 **A beginner-friendly guide to load balancing, routing, health checks, TLS termination and high availability**
-
-*Study notes prepared for the Distributed Systems Study Library · Author: Jayesh Sharma*
-
 
 ## Contents
 
