@@ -20,13 +20,15 @@ A collection of easy-to-follow study notes about distributed systems and system 
 
 ## Communication Patterns
 
-- [Long Polling — Explained Simply](Communication_Patterns/Long_Polling_Explained.md) — Regular vs long polling, held HTTP requests, timeout tuning, async servers, event brokers, cursor-based replay and retries.
+### Real-Time Communication
 
-- [Server-Sent Events (SSE) — Explained Simply](Communication_Patterns/Server_Sent_Events_Explained.md) — EventSource, live streaming, Last-Event-ID, replay, scalable brokers, heartbeats, backpressure and deployments.
+- [Long Polling — Explained Simply](Communication_Patterns/Real-Time Communication/Long_Polling_Explained.md) — Regular vs long polling, held HTTP requests, timeout tuning, async servers, event brokers, cursor-based replay and retries.
 
-- [WebSockets — Explained Simply](Communication_Patterns/WebSockets_Explained.md) — Full-duplex messaging, HTTP Upgrade, frames, horizontal scaling, Pub/Sub, recovery, heartbeats and graceful deployments.
+- [Server-Sent Events (SSE) — Explained Simply](Communication_Patterns/Real-Time Communication/Server_Sent_Events_Explained.md) — EventSource, live streaming, Last-Event-ID, replay, scalable brokers, heartbeats, backpressure and deployments.
 
-- [Webhooks — Explained Simply](Communication_Patterns/Webhooks_Explained.md) — HTTP callbacks, registration, secure signatures, idempotency, retries, queues, ordering and reliable delivery.
+- [WebSockets — Explained Simply](Communication_Patterns/Real-Time Communication/WebSockets_Explained.md) — Full-duplex messaging, HTTP Upgrade, frames, horizontal scaling, Pub/Sub, recovery, heartbeats and graceful deployments.
+
+- [Webhooks — Explained Simply](Communication_Patterns/Real-Time Communication/Webhooks_Explained.md) — HTTP callbacks, registration, secure signatures, idempotency, retries, queues, ordering and reliable delivery.
 
 ## Load Balancing
 
