@@ -22,6 +22,8 @@ A collection of easy-to-follow study notes about distributed systems and system 
 
 - [Long Polling — Explained Simply](Communication_Patterns/Long_Polling_Explained.md) — Regular vs long polling, held HTTP requests, timeout tuning, async servers, event brokers, cursor-based replay and retries.
 
+- [Server-Sent Events (SSE) — Explained Simply](Communication_Patterns/Server_Sent_Events_Explained.md) — EventSource, live streaming, Last-Event-ID, replay, scalable brokers, heartbeats, backpressure and deployments.
+
 ## Load Balancing
 
 - [What Are Load Balancers? — Layer 4 vs Layer 7](Load_Balancing/What_Are_Load_Balancers.md) — Routing, OSI layers, session affinity, health checks, TLS termination, draining, availability and original Mermaid diagrams.
