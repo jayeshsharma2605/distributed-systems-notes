@@ -38,6 +38,8 @@ A collection of easy-to-follow study notes about distributed systems and system 
 
 ## System Design Topics
 
+- [Multi-Region System Design — Explained Simply](Multi_Region_System_Design_Explained.md) — Global routing, active-passive and active-active, replication, RPO/RTO, consistency, conflict resolution, failover and data residency.
+
 - [Idempotency and Deduplication — Explained Simply](Idempotency_and_Deduplication_in_Distributed_Systems.md) — Safe retries, API idempotency keys, atomic uniqueness, message consumers, Kafka, Bloom filters and content hashing.
 
 - [Video and Audio Streaming at Scale — Explained Simply](Video_and_Audio_Streaming_at_Scale.md) — Encoding ladders, HLS/DASH, ABR playback, CDNs, live streaming, DRM, playback metrics and system design interviews.
