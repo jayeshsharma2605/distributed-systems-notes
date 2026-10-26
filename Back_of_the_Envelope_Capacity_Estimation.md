@@ -1,5 +1,7 @@
 # Back-of-the-Envelope Estimation for System Design
 
+*Distributed Systems Study Library · Author: Jayesh Sharma*
+
 **Simple maths, memorable numbers, and practical capacity planning**
 
 
