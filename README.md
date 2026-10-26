@@ -26,6 +26,8 @@ A collection of easy-to-follow study notes about distributed systems and system 
 
 - [WebSockets — Explained Simply](Communication_Patterns/WebSockets_Explained.md) — Full-duplex messaging, HTTP Upgrade, frames, horizontal scaling, Pub/Sub, recovery, heartbeats and graceful deployments.
 
+- [Webhooks — Explained Simply](Communication_Patterns/Webhooks_Explained.md) — HTTP callbacks, registration, secure signatures, idempotency, retries, queues, ordering and reliable delivery.
+
 ## Load Balancing
 
 - [What Are Load Balancers? — Layer 4 vs Layer 7](Load_Balancing/What_Are_Load_Balancers.md) — Routing, OSI layers, session affinity, health checks, TLS termination, draining, availability and original Mermaid diagrams.
