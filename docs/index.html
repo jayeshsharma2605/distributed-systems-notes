@@ -63,7 +63,7 @@
     mermaid.initialize({startOnLoad:false,theme:'default',securityLevel:'strict',flowchart:{useMaxWidth:false},sequence:{useMaxWidth:false}});
     const FILE_ROOT = 'https://raw.githubusercontent.com/jayeshsharma2605/distributed-systems-notes/main/';
     const topics = [
-      ['Load Balancers — L4 vs L7','Networking/OSI_Model/README.md','Networking › OSI Model: health, routing, TLS and high availability'],
+      ['What Are Load Balancers? — L4 vs L7','Load_Balancing/What_Are_Load_Balancers.md','Load Balancing: routing, health checks, TLS and high availability'],
       ['CAP Theorem and PACELC','CAP_Theorem_and_PACELC.md','Consistency, availability, network partitions and trade-offs'],
       ['Consistent Hashing and Virtual Nodes','Consistent_Hashing_and_Virtual_Nodes.md','Hash ring, modulo routing, vnodes and replication'],
       ['Latency, Throughput and Bandwidth','Latency_Throughput_and_Bandwidth.md','p99 latency, transfer maths, TCP windows and throughput'],
@@ -146,12 +146,9 @@
     function menu(query=''){
       nav.replaceChildren();
       topics.filter(t=>t[0].toLowerCase().includes(query.toLowerCase())).forEach(t=>{
-        if(t[1].startsWith('Networking/')){
-          if(!nav.querySelector('[data-group="networking"]')){
-            const group=document.createElement('div');group.className='nav-category';group.dataset.group='networking';group.textContent='Networking';nav.append(group);
-          }
-          if(t[1].startsWith('Networking/OSI_Model/')&&!nav.querySelector('[data-group="osi"]')){
-            const sub=document.createElement('div');sub.className='nav-subcategory';sub.dataset.group='osi';sub.textContent='OSI Model';nav.append(sub);
+        if(t[1].startsWith('Load_Balancing/')){
+          if(!nav.querySelector('[data-group="load-balancing"]')){
+            const group=document.createElement('div');group.className='nav-category';group.dataset.group='load-balancing';group.textContent='Load Balancing';nav.append(group);
           }
         } else if(!nav.querySelector('[data-group="system-design"]')){
           const group=document.createElement('div');group.className='nav-category';group.dataset.group='system-design';group.textContent='System Design';nav.append(group);
