@@ -54,7 +54,7 @@
         <p class="intro">Practical notes that connect distributed systems concepts to real applications. Choose a topic to read step-by-step explanations and explore architecture diagrams.</p>
         <div class="cards" id="cards"></div>
       </article>
-      <footer class="footer">Educational study notes · Diagrams rendered with Mermaid · Public content may be copied or saved by visitors.</footer>
+      <footer class="footer">Educational study notes · Diagrams rendered with Mermaid · Public content may be copied or saved by visitors. · Site version: 2026-10-26.2</footer>
     </main>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js" defer></script>
@@ -98,6 +98,17 @@
     function getTarget(){
       const raw=location.hash.startsWith('#/')?decodeURIComponent(location.hash.slice(2).split('?section=')[0]):'';
       return topics.find(t=>t[1]===(legacyPaths[raw]||raw));
+    }
+    // Canonicalize old bookmarked paths to the current flat Networking URLs.
+    function normalizeLegacyRoute(){
+      if(!location.hash.startsWith('#/'))return;
+      let raw;
+      try{raw=decodeURIComponent(location.hash.slice(2).split('?section=')[0])}
+      catch{return}
+      const modern=legacyPaths[raw];
+      if(!modern)return;
+      const suffix=location.hash.includes('?section=')?location.hash.slice(location.hash.indexOf('?section=')):'';
+      history.replaceState(history.state,'',location.pathname+location.search+href(modern)+suffix);
     }
     function getSection(){
       const marker='?section=';
@@ -216,6 +227,7 @@
     document.querySelector('#filter').addEventListener('input',e=>menu(e.target.value));
     document.querySelector('#mobileToggle').addEventListener('click',()=>{const side=document.querySelector('#sidebar');const open=side.classList.toggle('open');document.querySelector('#mobileToggle').setAttribute('aria-expanded',String(open))});
     window.addEventListener('hashchange',()=>{
+      normalizeLegacyRoute();
       const current=getTarget();
       const currentHeading=document.querySelector('#crumbs').textContent;
       if(current&&currentHeading==='Study Library / '+current[0]&&getSection()){
@@ -223,6 +235,7 @@
       }
       render();
     });
+    normalizeLegacyRoute();
     render();
   </script>
 </body>
