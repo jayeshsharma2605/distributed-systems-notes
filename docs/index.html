@@ -152,7 +152,7 @@
           target=decodeURIComponent(dest.pathname.slice(repoPrefix.length));
         } else if(dest.origin===pagesOrigin&&dest.pathname.endsWith('.md')){
           // Also rescue older absolute links pointing at a Pages site root.
-          target=decodeURIComponent(dest.pathname.replace(/^\\/distributed-systems-notes\\//,'').replace(/^\\//,''));
+          target=decodeURIComponent(dest.pathname.split('/').filter(Boolean).filter((part,i)=>!(i===0&&part==='distributed-systems-notes')).join('/'));
         } else if(dest.origin===location.origin&&dest.pathname.startsWith('/distributed-systems-notes/')&&dest.pathname.endsWith('.md')){
           target=decodeURIComponent(dest.pathname.slice('/distributed-systems-notes/'.length));
         } else return;
