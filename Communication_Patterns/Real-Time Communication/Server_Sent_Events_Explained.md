@@ -4,7 +4,6 @@
 
 **A clear study guide to streaming updates, EventSource, reconnecting, Last-Event-ID, scaling and real-world communication patterns.**
 
-> Original educational explanation based on the user-supplied SSE transcript. All writing, examples, comparison tables and Mermaid diagrams are independently created. Additional implementation notes clarify authentication, replay consistency, buffering and streaming HTTP clients.
 
 ## Contents
 
