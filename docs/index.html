@@ -72,10 +72,10 @@
       ['What Are Load Balancers? — L4 vs L7','Load_Balancing/What_Are_Load_Balancers.md','Load Balancing: routing, health checks, TLS and high availability'],
       ['Load Balancing Algorithms','Load_Balancing/Load_Balancing_Algorithms.md','Static, dynamic, hash-based, locality and adaptive algorithms'],
       ['DNS Load Balancing','Load_Balancing/DNS_Load_Balancing.md','DNS, regional routing, TTL, weighted DNS and failover'],
-      ['Long Polling','Communication_Patterns/Long_Polling_Explained.md','Held HTTP requests, asynchronous servers, timeouts, event replay and retries'],
-      ['Server-Sent Events (SSE)','Communication_Patterns/Server_Sent_Events_Explained.md','Live HTTP streams, EventSource, Last-Event-ID, replay and backpressure'],
-      ['WebSockets','Communication_Patterns/WebSockets_Explained.md','Full-duplex messaging, handshake, frames, Pub/Sub and scaling'],
-      ['Webhooks','Communication_Patterns/Webhooks_Explained.md','HTTP callbacks, signatures, idempotency, retries and reliable event delivery'],
+      ['Long Polling','Communication_Patterns/Real-Time Communication/Long_Polling_Explained.md','Held HTTP requests, asynchronous servers, timeouts, event replay and retries'],
+      ['Server-Sent Events (SSE)','Communication_Patterns/Real-Time Communication/Server_Sent_Events_Explained.md','Live HTTP streams, EventSource, Last-Event-ID, replay and backpressure'],
+      ['WebSockets','Communication_Patterns/Real-Time Communication/WebSockets_Explained.md','Full-duplex messaging, handshake, frames, Pub/Sub and scaling'],
+      ['Webhooks','Communication_Patterns/Real-Time Communication/Webhooks_Explained.md','HTTP callbacks, signatures, idempotency, retries and reliable event delivery'],
       ['CAP Theorem and PACELC','CAP_Theorem_and_PACELC.md','Consistency, availability, network partitions and trade-offs'],
       ['Consistent Hashing and Virtual Nodes','Consistent_Hashing_and_Virtual_Nodes.md','Hash ring, modulo routing, vnodes and replication'],
       ['Latency, Throughput and Bandwidth','Latency_Throughput_and_Bandwidth.md','p99 latency, transfer maths, TCP windows and throughput'],
@@ -99,7 +99,11 @@
       'Networking/OSI_Model/OSI_Model_7_Layers.md':'Networking/OSI_Model_7_Layers.md',
       'Networking/IP_Address/IP_Addressing_Explained.md':'Networking/IP_Addressing_Explained.md',
       'Networking/TCP_vs_UDP/TCP_vs_UDP_Explained.md':'Networking/TCP_vs_UDP_Explained.md',
-      'Networking/HTTP_vs_HTTPS/HTTP_vs_HTTPS_Explained.md':'Networking/HTTP_vs_HTTPS_Explained.md'
+      'Networking/HTTP_vs_HTTPS/HTTP_vs_HTTPS_Explained.md':'Networking/HTTP_vs_HTTPS_Explained.md',
+      'Communication_Patterns/Long_Polling_Explained.md':'Communication_Patterns/Real-Time Communication/Long_Polling_Explained.md',
+      'Communication_Patterns/Server_Sent_Events_Explained.md':'Communication_Patterns/Real-Time Communication/Server_Sent_Events_Explained.md',
+      'Communication_Patterns/WebSockets_Explained.md':'Communication_Patterns/Real-Time Communication/WebSockets_Explained.md',
+      'Communication_Patterns/Webhooks_Explained.md':'Communication_Patterns/Real-Time Communication/Webhooks_Explained.md'
     };
     function getTarget(){
       const raw=location.hash.startsWith('#/')?decodeURIComponent(location.hash.slice(2).split('?section=')[0]):'';
@@ -215,6 +219,9 @@
         } else if(t[1].startsWith('Communication_Patterns/')){
           if(!nav.querySelector('[data-group="communication-patterns"]')){
             const group=document.createElement('div');group.className='nav-category';group.dataset.group='communication-patterns';group.textContent='Communication Patterns';nav.append(group);
+          }
+          if(t[1].startsWith('Communication_Patterns/Real-Time Communication/')&&!nav.querySelector('[data-group="real-time-communication"]')){
+            const sub=document.createElement('div');sub.className='nav-subcategory';sub.dataset.group='real-time-communication';sub.textContent='Real-Time Communication';nav.append(sub);
           }
         } else if(!nav.querySelector('[data-group="system-design"]')){
           const group=document.createElement('div');group.className='nav-category';group.dataset.group='system-design';group.textContent='System Design';nav.append(group);
