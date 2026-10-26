@@ -6,21 +6,13 @@ A collection of easy-to-follow study notes about distributed systems and system 
 
 ## Networking
 
-### OSI Model
+- [OSI Model — All 7 Layers Explained Simply](Networking/OSI_Model_7_Layers.md) — Physical through Application layers, encapsulation, HTTPS request journey, TCP/IP comparison, troubleshooting and Mermaid diagrams.
 
-- [OSI Model — All 7 Layers Explained Simply](Networking/OSI_Model/OSI_Model_7_Layers.md) — Physical through Application layers, encapsulation, HTTPS request journey, TCP/IP comparison, troubleshooting and Mermaid diagrams.
+- [IP Addressing Explained Simply — IPv4, IPv6, CIDR, Subnets and NAT](Networking/IP_Addressing_Explained.md) — IP routing, IPv4/IPv6, subnet maths, public/private IPs, VPC, NAT, DNS and service discovery.
 
-### IP Address
+- [TCP vs UDP — Explained Simply](Networking/TCP_vs_UDP_Explained.md) — Transport layer, TCP handshake, acknowledgments, flow control, congestion control, UDP, QUIC and HTTP/3.
 
-- [IP Addressing Explained Simply — IPv4, IPv6, CIDR, Subnets and NAT](Networking/IP_Address/IP_Addressing_Explained.md) — IP routing, IPv4/IPv6, subnet maths, public/private IPs, VPC, NAT, DNS and service discovery.
-
-### TCP vs UDP
-
-- [TCP vs UDP — Explained Simply](Networking/TCP_vs_UDP/TCP_vs_UDP_Explained.md) — Transport layer, TCP handshake, acknowledgments, flow control, congestion control, UDP, QUIC and HTTP/3.
-
-### HTTP vs HTTPS
-
-- [HTTP vs HTTPS — Explained Simply](Networking/HTTP_vs_HTTPS/HTTP_vs_HTTPS_Explained.md) — HTTP messages, methods, status codes, TLS, certificates, HTTP/1.1, HTTP/2, HTTP/3 and HTTPS system design.
+- [HTTP vs HTTPS — Explained Simply](Networking/HTTP_vs_HTTPS_Explained.md) — HTTP messages, methods, status codes, TLS, certificates, HTTP/1.1, HTTP/2, HTTP/3 and HTTPS system design.
 
 ## Load Balancing
 
