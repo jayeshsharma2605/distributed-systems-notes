@@ -4,8 +4,6 @@
 
 **An easy-to-follow guide to reliable transport, latency, handshakes, acknowledgments, flow control, congestion control, QUIC and HTTP/3.**
 
-> Source basis: user-provided TCP/UDP video transcript. The writing, examples, tables and Mermaid diagrams are original interpretations of its concepts. The API idempotency example and selected technical clarifications are additional educational context.
-
 ## Contents
 
 - [1. Where TCP and UDP fit in networking](#1-where-tcp-and-udp-fit-in-networking)
