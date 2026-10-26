@@ -38,6 +38,8 @@ A collection of easy-to-follow study notes about distributed systems and system 
 
 ## System Design Topics
 
+- [Distributed Unique ID Generation — UUID, Snowflake and Base62](Distributed_Unique_ID_Generation_System_Design.md) — Auto-increment and ticket servers, UUIDv4/v7, Snowflake bit layouts and clocks, ID blocks, Base62 and opaque IDs.
+
 - [Location-Based System Design — Geohashes, Quadtrees and Nearby Search](Location_Based_System_Design_Geohash_and_Quadtrees.md) — Static versus moving location data, geospatial indexing, Redis GEO, PostGIS, nearest-driver matching, geofencing and hotspots.
 
 - [Search and Type-Ahead (Autocomplete) — System Design](Search_and_Typeahead_System_Design.md) — Inverted indexes, analyzers, BM25 ranking, search shards, CDC indexing, prefix tries, autocomplete suggestions and caching.
