@@ -71,7 +71,7 @@ sequenceDiagram
     participant C as Client
     participant S as Long-poll server
     C->>S: GET /notifications?after=120
-    Note over S: No new event; hold request
+    Note over S: No new event, so hold the request
     Note over S: Event 121 arrives
     S-->>C: 200 OK: event 121
     C->>S: GET /notifications?after=121
@@ -265,7 +265,7 @@ sequenceDiagram
     A->>STORE: Query events after 120
     STORE-->>A: Event 121
     A-->>C: Event 121
-    Note over C: Reconnecting; event 122 is created
+    Note over C: During reconnection, event 122 is created
     C->>B: GET events?after=121
     B->>STORE: Query events after 121
     STORE-->>B: Event 122
