@@ -1,5 +1,7 @@
 # Handling Hot Keys in Distributed Systems
 
+*Distributed Systems Study Library · Author: Jayesh Sharma*
+
 Practical system design notes on **read hot keys, write hot keys, skewed partitions, counters, and flash-sale inventory**.
 
 
