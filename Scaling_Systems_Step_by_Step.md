@@ -1,5 +1,7 @@
 # Scalability Explained: How to Scale a System Step by Step
 
+*Distributed Systems Study Library · Author: Jayesh Sharma*
+
 *A practical guide to vertical scaling, horizontal scaling, stateless services, caching, database replication, sharding and background queues.*
 
 ## Contents
