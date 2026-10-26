@@ -4,8 +4,6 @@
 
 **A practical networking chapter for beginners and system-design interviews, with original examples and Mermaid diagrams.**
 
-> These notes independently explain the ideas in the user-provided IP-addressing transcript. Examples, diagrams, structure and wording are original. Supplementary details such as standard private IPv4 ranges, reserved-address calculations and IPv6 notation are added as clearly explained background rather than copied transcript text.
-
 ## Contents
 
 1. [Why an IP address matters](#1-why-an-ip-address-matters)
@@ -502,5 +500,3 @@ An IP address identifies an interface for packet routing across networks. IPv4 u
 **Final takeaway:** **IP tells the network where a packet should go; CIDR and subnets organize addresses; NAT helps private IPv4 services communicate outward; DNS and service discovery let callers find services even when underlying IPs change.**
 
 ---
-
-*Source basis: user-supplied IP-addressing transcript. These notes use original prose, arithmetic examples and Mermaid diagrams, with clearly distinguished supplementary networking fundamentals.*
