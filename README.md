@@ -38,6 +38,8 @@ A collection of easy-to-follow study notes about distributed systems and system 
 
 ## System Design Topics
 
+- [Large File Uploads and Downloads — Explained Simply](Large_File_Uploads_and_Downloads_System_Design.md) — Object storage and metadata, direct uploads, multipart resume, checksums, processing workers, CDN, Range requests and file synchronization.
+
 - [Fanout-on-Read vs Fanout-on-Write — Explained Simply](Fanout_on_Read_vs_Fanout_on_Write.md) — Pull vs push feeds, hybrid celebrity handling, batched queues, fanout idempotency and real-world messaging examples.
 
 - [Designing Real-Time Updates at Scale — Explained Simply](Designing_Real_Time_Updates_at_Scale.md) — Choosing polling, SSE and WebSockets, gateway fan-out, durable replay, capacity planning and interview architecture.
