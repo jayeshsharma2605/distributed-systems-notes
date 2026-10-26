@@ -38,6 +38,8 @@ A collection of easy-to-follow study notes about distributed systems and system 
 
 ## System Design Topics
 
+- [Data Synchronization, CDC and Reconciliation — Explained Simply](Data_Synchronization_CDC_and_Reconciliation.md) — Sources of truth, dual writes, outbox, Debezium CDC, Kafka ordering, backfills, reconciliation and offline conflict handling.
+
 - [Distributed Transactions, 2PC and Sagas — Explained Simply](Distributed_Transactions_2PC_and_Sagas.md) — Atomicity across services, two-phase commit, saga orchestration/choreography, compensation, TCC reservations and transactional outbox.
 
 - [Multi-Region System Design — Explained Simply](Multi_Region_System_Design_Explained.md) — Global routing, active-passive and active-active, replication, RPO/RTO, consistency, conflict resolution, failover and data residency.
