@@ -4,7 +4,6 @@
 
 **From a browser request to electrical signals: networking explained with examples, diagrams, and troubleshooting tips.**
 
-> Independently written study notes based on the supplied OSI-model transcript. Explanations, worked scenarios and Mermaid diagrams are newly authored. A few short clarifications distinguish the conceptual OSI model from how modern TCP/IP systems work.
 
 ## Contents
 
@@ -467,5 +466,3 @@ The OSI model is a conceptual framework that splits network communication into s
 **Final takeaway:** **Layer 1 carries bits; Layer 2 handles local frames; Layer 3 routes across networks; Layer 4 delivers to the right endpoint; Layers 5 and 6 describe sessions and data representation; Layer 7 handles application-level meaning.**
 
 ---
-
-*Source basis: user-supplied OSI-model transcript. All prose, examples and Mermaid diagrams are independently written; explanatory clarifications about modern TCP/IP, HTTP/3 and TLS are additional educational context.*
