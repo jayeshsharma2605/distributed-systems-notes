@@ -1,5 +1,7 @@
 # Handling Traffic Spikes in Distributed Systems
 
+*Distributed Systems Study Library · Author: Jayesh Sharma*
+
 *A practical system-design guide to sudden increases in traffic, based on the supplied lesson transcript. The explanations and diagrams below have been independently rewritten and organized for learning.*
 
 ## What will you learn?
