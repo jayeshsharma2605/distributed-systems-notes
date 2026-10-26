@@ -1,5 +1,7 @@
 # Reliability in Distributed Systems
 
+*Distributed Systems Study Library · Author: Jayesh Sharma*
+
 **Correct results, safe recovery, controlled failures and dependable user experiences**
 
 
