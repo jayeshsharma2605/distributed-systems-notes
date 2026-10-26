@@ -4,8 +4,6 @@
 
 *Distributed Systems Study Library · Author: Jayesh Sharma*
 
-> Original study notes based on the supplied DNS load-balancing transcript. The explanations, examples, tables and Mermaid diagrams here are independently authored. Any numbers in worked scenarios are illustrative; a real deployment depends on DNS-provider, resolver and client behavior.
-
 ## Contents
 
 1. [Why DNS can help with load balancing](#1-why-dns-can-help-with-load-balancing)
@@ -459,5 +457,3 @@ Do not interpret the result as a guaranteed share of user sessions or requests.
 **Final takeaway:** **DNS can guide clients toward an appropriate region, while a regional load balancer directs connections or requests to healthy servers. Combining the two provides flexible global routing without pretending DNS is instant or aware of every request.**
 
 ---
-
-*Source basis: user-supplied DNS load-balancing transcript. All prose and diagrams are independently written for study. Concepts and examples are educational; operational behavior depends on resolver, client and service configuration.*
