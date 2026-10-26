@@ -14,6 +14,14 @@ A collection of easy-to-follow study notes about distributed systems and system 
 
 - [IP Addressing Explained Simply — IPv4, IPv6, CIDR, Subnets and NAT](Networking/IP_Address/IP_Addressing_Explained.md) — IP routing, IPv4/IPv6, subnet maths, public/private IPs, VPC, NAT, DNS and service discovery.
 
+### TCP vs UDP
+
+- [TCP vs UDP — Explained Simply](Networking/TCP_vs_UDP/TCP_vs_UDP_Explained.md) — Transport layer, TCP handshake, acknowledgments, flow control, congestion control, UDP, QUIC and HTTP/3.
+
+### HTTP vs HTTPS
+
+- [HTTP vs HTTPS — Explained Simply](Networking/HTTP_vs_HTTPS/HTTP_vs_HTTPS_Explained.md) — HTTP messages, methods, status codes, TLS, certificates, HTTP/1.1, HTTP/2, HTTP/3 and HTTPS system design.
+
 ## Load Balancing
 
 - [What Are Load Balancers? — Layer 4 vs Layer 7](Load_Balancing/What_Are_Load_Balancers.md) — Routing, OSI layers, session affinity, health checks, TLS termination, draining, availability and original Mermaid diagrams.
