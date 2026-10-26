@@ -1,5 +1,7 @@
 # Distributed Systems
 
+*Distributed Systems Study Library · Author: Jayesh Sharma*
+
 A collection of easy-to-follow study notes about distributed systems and system design, with practical examples, trade-offs, and architecture diagrams.
 
 ## Load Balancing
