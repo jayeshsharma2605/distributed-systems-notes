@@ -1,5 +1,7 @@
 # Introduction to System Design
 
+*Distributed Systems Study Library · Author: Jayesh Sharma*
+
 *A beginner-friendly guide to components, requirements, architecture decisions and trade-offs.*
 
 
