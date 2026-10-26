@@ -38,6 +38,8 @@ A collection of easy-to-follow study notes about distributed systems and system 
 
 ## System Design Topics
 
+- [Fanout-on-Read vs Fanout-on-Write — Explained Simply](Fanout_on_Read_vs_Fanout_on_Write.md) — Pull vs push feeds, hybrid celebrity handling, batched queues, fanout idempotency and real-world messaging examples.
+
 - [Designing Real-Time Updates at Scale — Explained Simply](Designing_Real_Time_Updates_at_Scale.md) — Choosing polling, SSE and WebSockets, gateway fan-out, durable replay, capacity planning and interview architecture.
 
 - [Introduction to System Design](Introduction_to_System_Design.md) — Requirements, core components, photo-upload and feed flows, trade-offs, evolution and interview approach.
