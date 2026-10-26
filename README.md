@@ -2,6 +2,12 @@
 
 A collection of easy-to-follow study notes about distributed systems and system design, with practical examples, trade-offs, and architecture diagrams.
 
+## Networking
+
+### OSI Model
+
+- [Load Balancers — Layer 4 vs Layer 7](Networking/OSI_Model/README.md) — Routing, OSI layers, session affinity, health checks, TLS termination, draining, availability and original Mermaid diagrams.
+
 ## System Design Topics
 
 - [Introduction to System Design](Introduction_to_System_Design.md) — Requirements, core components, photo-upload and feed flows, trade-offs, evolution and interview approach.
