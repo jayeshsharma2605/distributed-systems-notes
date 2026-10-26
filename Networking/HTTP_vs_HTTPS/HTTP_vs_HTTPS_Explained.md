@@ -4,7 +4,6 @@
 
 **A practical beginner's guide to HTTP requests, responses, TLS, certificates, HTTP versions and real-world system design.**
 
-> These educational notes are independently written from the user-supplied HTTP/HTTPS transcript. Explanations, calculations and Mermaid diagrams are new. Technical clarifications on retries, certificate validation and HTTP versions are added as explanatory context.
 
 ## Contents
 
