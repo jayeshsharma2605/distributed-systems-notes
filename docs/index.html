@@ -65,6 +65,8 @@
     const topics = [
       ['OSI Model — 7 Layers','Networking/OSI_Model/OSI_Model_7_Layers.md','Networking › OSI Model: layers, encapsulation, HTTPS and troubleshooting'],
       ['IP Addressing — IPv4, IPv6 and CIDR','Networking/IP_Address/IP_Addressing_Explained.md','Networking › IP Address: subnetting, NAT, VPC and DNS'],
+      ['TCP vs UDP','Networking/TCP_vs_UDP/TCP_vs_UDP_Explained.md','TCP handshake, reliability, UDP, QUIC and HTTP/3'],
+      ['HTTP vs HTTPS','Networking/HTTP_vs_HTTPS/HTTP_vs_HTTPS_Explained.md','HTTP requests, status codes, TLS, certificates and HTTP versions'],
       ['What Are Load Balancers? — L4 vs L7','Load_Balancing/What_Are_Load_Balancers.md','Load Balancing: routing, health checks, TLS and high availability'],
       ['Load Balancing Algorithms','Load_Balancing/Load_Balancing_Algorithms.md','Static, dynamic, hash-based, locality and adaptive algorithms'],
       ['DNS Load Balancing','Load_Balancing/DNS_Load_Balancing.md','DNS, regional routing, TTL, weighted DNS and failover'],
@@ -159,6 +161,12 @@
           }
           if(t[1].startsWith('Networking/IP_Address/')&&!nav.querySelector('[data-group="ip-address"]')){
             const sub=document.createElement('div');sub.className='nav-subcategory';sub.dataset.group='ip-address';sub.textContent='IP Address';nav.append(sub);
+          }
+          if(t[1].startsWith('Networking/TCP_vs_UDP/')&&!nav.querySelector('[data-group="tcp-udp"]')){
+            const sub=document.createElement('div');sub.className='nav-subcategory';sub.dataset.group='tcp-udp';sub.textContent='TCP vs UDP';nav.append(sub);
+          }
+          if(t[1].startsWith('Networking/HTTP_vs_HTTPS/')&&!nav.querySelector('[data-group="http-https"]')){
+            const sub=document.createElement('div');sub.className='nav-subcategory';sub.dataset.group='http-https';sub.textContent='HTTP vs HTTPS';nav.append(sub);
           }
         } else if(t[1].startsWith('Load_Balancing/')){
           if(!nav.querySelector('[data-group="load-balancing"]')){
