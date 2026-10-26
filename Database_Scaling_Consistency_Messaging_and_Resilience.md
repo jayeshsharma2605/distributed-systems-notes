@@ -1,5 +1,7 @@
 # Database Scaling, Consistency, Messaging & Resilience
 
+*Distributed Systems Study Library · Author: Jayesh Sharma*
+
 ## Contents
 - [1. Database scaling](#1-database-scaling)
 - [2. Replication and read replicas](#2-replication-and-read-replicas)
