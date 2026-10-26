@@ -38,6 +38,8 @@ A collection of easy-to-follow study notes about distributed systems and system 
 
 ## System Design Topics
 
+- [Distributed Transactions, 2PC and Sagas — Explained Simply](Distributed_Transactions_2PC_and_Sagas.md) — Atomicity across services, two-phase commit, saga orchestration/choreography, compensation, TCC reservations and transactional outbox.
+
 - [Multi-Region System Design — Explained Simply](Multi_Region_System_Design_Explained.md) — Global routing, active-passive and active-active, replication, RPO/RTO, consistency, conflict resolution, failover and data residency.
 
 - [Idempotency and Deduplication — Explained Simply](Idempotency_and_Deduplication_in_Distributed_Systems.md) — Safe retries, API idempotency keys, atomic uniqueness, message consumers, Kafka, Bloom filters and content hashing.
