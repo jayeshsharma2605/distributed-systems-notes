@@ -1,5 +1,7 @@
 # CAP Theorem and PACELC — Explained with an Online Store
 
+*Distributed Systems Study Library · Author: Jayesh Sharma*
+
 **Simple definitions, realistic decisions, easy maths and original architecture diagrams**
 
 ## Contents
