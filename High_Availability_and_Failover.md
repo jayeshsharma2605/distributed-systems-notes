@@ -4,8 +4,6 @@
 
 **Uptime, redundancy, failover, health checks and fault isolation — explained with easy maths and diagrams**
 
-> Original study notes adapted from the user-provided availability lesson transcript. This is an independently organized explanation with newly written examples and Mermaid diagrams; it is not a reproduction of the lesson's narration. Numbers below assume a 365-day year unless stated otherwise.
-
 ## Contents
 
 1. [Availability vs reliability vs scalability](#1-availability-vs-reliability-vs-scalability)
@@ -419,5 +417,3 @@ Trace a request through a simple online store. For each component, imagine that 
 **Takeaway:** High availability comes from designing useful alternate paths, reducing shared failure points, automating and testing recovery, and protecting essential user operations when dependencies fail.
 
 ---
-
-*Attribution: Concepts summarized from the user-provided availability lesson transcript, with independent wording, original Mermaid diagrams, and labelled supplementary terminology. This is a study adaptation rather than a transcription.*
