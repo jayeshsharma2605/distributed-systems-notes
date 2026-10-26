@@ -4,7 +4,6 @@
 
 *Study notes prepared for the Distributed Systems Study Library · Author: Jayesh Sharma*
 
-> These notes are an original educational adaptation of the supplied load-balancing transcript. Explanations and Mermaid diagrams are newly created. The OSI table and practical clarifications explain how Layer 4 and Layer 7 routing relate to networking.
 
 ## Contents
 
@@ -431,5 +430,3 @@ A backend currently has active WebSocket connections but must be replaced.
 **Final takeaway:** **A load balancer makes a pool of services look like one endpoint. Choose L4 or L7 based on the routing information you need, then design for health, shared state, graceful removal and redundancy.**
 
 ---
-
-*Source basis: user-provided load-balancers transcript. The guide is restructured and paraphrased with original examples and diagrams, plus explicitly identified supplemental OSI and capacity explanations. It does not reproduce extended passages of the transcript.*
