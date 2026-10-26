@@ -38,6 +38,8 @@ A collection of easy-to-follow study notes about distributed systems and system 
 
 ## System Design Topics
 
+- [Preventing Double Booking — Reservation System Design](Preventing_Double_Booking_and_Reservation_System_Design.md) — Atomic seat booking, unique constraints, row locks, optimistic concurrency, expiring holds, payment recovery and high-demand ticket queues.
+
 - [Data Synchronization, CDC and Reconciliation — Explained Simply](Data_Synchronization_CDC_and_Reconciliation.md) — Sources of truth, dual writes, outbox, Debezium CDC, Kafka ordering, backfills, reconciliation and offline conflict handling.
 
 - [Distributed Transactions, 2PC and Sagas — Explained Simply](Distributed_Transactions_2PC_and_Sagas.md) — Atomicity across services, two-phase commit, saga orchestration/choreography, compensation, TCC reservations and transactional outbox.
