@@ -1,5 +1,7 @@
 # URL Shortener — System Design Exercise
 
+*Distributed Systems Study Library · Author: Jayesh Sharma*
+
 
 ## Contents
 - [1. Problem statement](#1-problem-statement)
