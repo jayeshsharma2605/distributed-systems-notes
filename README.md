@@ -5,6 +5,7 @@ A collection of easy-to-follow study notes about distributed systems and system 
 ## Load Balancing
 
 - [What Are Load Balancers? — Layer 4 vs Layer 7](Load_Balancing/What_Are_Load_Balancers.md) — Routing, OSI layers, session affinity, health checks, TLS termination, draining, availability and original Mermaid diagrams.
+- [Load Balancing Algorithms — Explained Simply](Load_Balancing/Load_Balancing_Algorithms.md) — Round Robin, weighted routing, least connections/requests, EWMA, P2C, consistent hashing, locality-aware and adaptive routing.
 
 ## System Design Topics
 
