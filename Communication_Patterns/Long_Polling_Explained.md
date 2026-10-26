@@ -4,7 +4,6 @@
 
 **A beginner-friendly system-design guide to notification polling, HTTP timeouts, scaling long-held requests, event recovery and retry behavior.**
 
-> Original educational notes based on the user-supplied long-polling transcript. Wording, examples, worked calculations, code sketches and diagrams are independently written. Extra implementation considerations such as race-free subscriptions, idempotent event processing, SSE comparison and monitoring are supplementary explanations.
 
 ## Contents
 
