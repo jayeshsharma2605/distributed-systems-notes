@@ -72,6 +72,7 @@
       ['What Are Load Balancers? — L4 vs L7','Load_Balancing/What_Are_Load_Balancers.md','Load Balancing: routing, health checks, TLS and high availability'],
       ['Load Balancing Algorithms','Load_Balancing/Load_Balancing_Algorithms.md','Static, dynamic, hash-based, locality and adaptive algorithms'],
       ['DNS Load Balancing','Load_Balancing/DNS_Load_Balancing.md','DNS, regional routing, TTL, weighted DNS and failover'],
+      ['Long Polling','Communication_Patterns/Long_Polling_Explained.md','Held HTTP requests, asynchronous servers, timeouts, event replay and retries'],
       ['CAP Theorem and PACELC','CAP_Theorem_and_PACELC.md','Consistency, availability, network partitions and trade-offs'],
       ['Consistent Hashing and Virtual Nodes','Consistent_Hashing_and_Virtual_Nodes.md','Hash ring, modulo routing, vnodes and replication'],
       ['Latency, Throughput and Bandwidth','Latency_Throughput_and_Bandwidth.md','p99 latency, transfer maths, TCP windows and throughput'],
@@ -207,6 +208,10 @@
         } else if(t[1].startsWith('Load_Balancing/')){
           if(!nav.querySelector('[data-group="load-balancing"]')){
             const group=document.createElement('div');group.className='nav-category';group.dataset.group='load-balancing';group.textContent='Load Balancing';nav.append(group);
+          }
+        } else if(t[1].startsWith('Communication_Patterns/')){
+          if(!nav.querySelector('[data-group="communication-patterns"]')){
+            const group=document.createElement('div');group.className='nav-category';group.dataset.group='communication-patterns';group.textContent='Communication Patterns';nav.append(group);
           }
         } else if(!nav.querySelector('[data-group="system-design"]')){
           const group=document.createElement('div');group.className='nav-category';group.dataset.group='system-design';group.textContent='System Design';nav.append(group);
