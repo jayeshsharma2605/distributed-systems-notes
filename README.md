@@ -38,6 +38,8 @@ A collection of easy-to-follow study notes about distributed systems and system 
 
 ## System Design Topics
 
+- [Handling Long-Running Tasks — System Design Explained Simply](Handling_Long_Running_Tasks_System_Design.md) — Async jobs, HTTP 202, queues and workers, visibility leases, retries, checkpoints, workflow engines, progress and cancellation.
+
 - [Preventing Double Booking — Reservation System Design](Preventing_Double_Booking_and_Reservation_System_Design.md) — Atomic seat booking, unique constraints, row locks, optimistic concurrency, expiring holds, payment recovery and high-demand ticket queues.
 
 - [Data Synchronization, CDC and Reconciliation — Explained Simply](Data_Synchronization_CDC_and_Reconciliation.md) — Sources of truth, dual writes, outbox, Debezium CDC, Kafka ordering, backfills, reconciliation and offline conflict handling.
