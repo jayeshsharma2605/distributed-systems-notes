@@ -110,11 +110,37 @@
         a.setAttribute('href',href(topic[1])+'?section='+encodeURIComponent(target));
       });
     }
-    function scrollToSection(){
-      const slug=getSection();if(!slug)return;
-      const heading=document.getElementById(slug);
-      if(heading)heading.scrollIntoView({behavior:'instant',block:'start'});
+    function scrollToSection(slug=getSection()){
+      if(!slug)return false;
+      const heading=article.querySelectorAll('[id]');
+      const target=[...heading].find(node=>node.id===slug);
+      if(!target)return false;
+      target.scrollIntoView({behavior:'auto',block:'start'});
+      return true;
     }
+    // In-page contents links must scroll without re-fetching and redrawing
+    // the article. The URL is still shareable and browser history is preserved.
+    article.addEventListener('click',event=>{
+      const anchor=event.target.closest('a[href]');
+      if(!anchor||!article.contains(anchor))return;
+      const url=new URL(anchor.href,location.href);
+      if(url.origin!==location.origin||url.pathname!==location.pathname)return;
+      const marker='?section=';
+      if(!url.hash.includes(marker))return;
+      const section=decodeURIComponent(url.hash.split(marker)[1]||'');
+      if(!section||!article.querySelectorAll('[id]').length)return;
+      if(!scrollToSection(section))return;
+      event.preventDefault();
+      if(url.hash!==location.hash)history.pushState({section},'',url.hash);
+    });
+    window.addEventListener('popstate',()=>{
+      const target=getTarget();
+      if(target&&article.querySelectorAll('[id]').length&&getSection()){
+        scrollToSection();
+      }else{
+        render();
+      }
+    });
     function menu(query=''){
       nav.replaceChildren();
       topics.filter(t=>t[0].toLowerCase().includes(query.toLowerCase())).forEach(t=>{
@@ -164,7 +190,14 @@
     }
     document.querySelector('#filter').addEventListener('input',e=>menu(e.target.value));
     document.querySelector('#mobileToggle').addEventListener('click',()=>{const side=document.querySelector('#sidebar');const open=side.classList.toggle('open');document.querySelector('#mobileToggle').setAttribute('aria-expanded',String(open))});
-    window.addEventListener('hashchange',render);
+    window.addEventListener('hashchange',()=>{
+      const current=getTarget();
+      const currentHeading=document.querySelector('#crumbs').textContent;
+      if(current&&currentHeading==='Study Library / '+current[0]&&getSection()){
+        if(scrollToSection())return;
+      }
+      render();
+    });
     render();
   </script>
 </body>
