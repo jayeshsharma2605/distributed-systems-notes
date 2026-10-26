@@ -14,6 +14,8 @@ A collection of easy-to-follow study notes about distributed systems and system 
 
 - [HTTP vs HTTPS — Explained Simply](Networking/HTTP_vs_HTTPS_Explained.md) — HTTP messages, methods, status codes, TLS, certificates, HTTP/1.1, HTTP/2, HTTP/3 and HTTPS system design.
 
+- [DNS Resolution — Explained Simply](Networking/DNS_Resolution_Explained.md) — Root, TLD and authoritative name servers, recursive/iterative lookups, caches, TTL, DNS records and propagation.
+
 ## Load Balancing
 
 - [What Are Load Balancers? — Layer 4 vs Layer 7](Load_Balancing/What_Are_Load_Balancers.md) — Routing, OSI layers, session affinity, health checks, TLS termination, draining, availability and original Mermaid diagrams.
