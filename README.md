@@ -4,6 +4,12 @@
 
 A collection of easy-to-follow study notes about distributed systems and system design, with practical examples, trade-offs, and architecture diagrams.
 
+## Networking
+
+### OSI Model
+
+- [OSI Model — All 7 Layers Explained Simply](Networking/OSI_Model/OSI_Model_7_Layers.md) — Physical through Application layers, encapsulation, HTTPS request journey, TCP/IP comparison, troubleshooting and Mermaid diagrams.
+
 ## Load Balancing
 
 - [What Are Load Balancers? — Layer 4 vs Layer 7](Load_Balancing/What_Are_Load_Balancers.md) — Routing, OSI layers, session affinity, health checks, TLS termination, draining, availability and original Mermaid diagrams.
