@@ -38,6 +38,8 @@ A collection of easy-to-follow study notes about distributed systems and system 
 
 ## System Design Topics
 
+- [Search and Type-Ahead (Autocomplete) — System Design](Search_and_Typeahead_System_Design.md) — Inverted indexes, analyzers, BM25 ranking, search shards, CDC indexing, prefix tries, autocomplete suggestions and caching.
+
 - [Handling Long-Running Tasks — System Design Explained Simply](Handling_Long_Running_Tasks_System_Design.md) — Async jobs, HTTP 202, queues and workers, visibility leases, retries, checkpoints, workflow engines, progress and cancellation.
 
 - [Preventing Double Booking — Reservation System Design](Preventing_Double_Booking_and_Reservation_System_Design.md) — Atomic seat booking, unique constraints, row locks, optimistic concurrency, expiring holds, payment recovery and high-demand ticket queues.
