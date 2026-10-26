@@ -1,5 +1,7 @@
 # Consistent Hashing and Virtual Nodes — Explained Simply
 
+*Distributed Systems Study Library · Author: Jayesh Sharma*
+
 **From modulo hashing to a hash ring, with easy maths, routing examples, original diagrams and interview notes.**
 
 
