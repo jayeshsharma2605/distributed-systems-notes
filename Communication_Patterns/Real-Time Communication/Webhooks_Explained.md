@@ -4,7 +4,6 @@
 
 **Understand HTTP callbacks, payment notifications, delivery retries, idempotency, signed requests, queues, out-of-order events and scalable webhook design.**
 
-> An independently written educational adaptation of the user-supplied webhook transcript. The structure, descriptions, examples, calculations and Mermaid diagrams are original. Additional security guidance such as SSRF protection and atomic deduplication is identified as supplementary context.
 
 ## Contents
 
