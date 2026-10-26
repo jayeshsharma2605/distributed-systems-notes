@@ -137,6 +137,35 @@
         a.setAttribute('href',href(topic[1])+'?section='+encodeURIComponent(target));
       });
     }
+    function prepareArticleLinks(topic){
+      // Markdown links are relative to the source Markdown file, not the Pages site.
+      const sourceBase='https://github.com/jayeshsharma2605/distributed-systems-notes/blob/main/'+topic[1];
+      const repoPrefix='/jayeshsharma2605/distributed-systems-notes/blob/main/';
+      const pagesOrigin='https://jayeshsharma2605.github.io';
+      article.querySelectorAll('a[href]').forEach(a=>{
+        const literal=a.getAttribute('href');
+        if(!literal||literal.startsWith('#')||literal.startsWith('mailto:')||literal.startsWith('tel:'))return;
+        let dest;
+        try{dest=new URL(literal,sourceBase)}catch{return}
+        let target='';
+        if(dest.origin==='https://github.com'&&dest.pathname.startsWith(repoPrefix)){
+          target=decodeURIComponent(dest.pathname.slice(repoPrefix.length));
+        } else if(dest.origin===pagesOrigin&&dest.pathname.endsWith('.md')){
+          // Also rescue older absolute links pointing at a Pages site root.
+          target=decodeURIComponent(dest.pathname.replace(/^\\/distributed-systems-notes\\//,'').replace(/^\\//,''));
+        } else if(dest.origin===location.origin&&dest.pathname.startsWith('/distributed-systems-notes/')&&dest.pathname.endsWith('.md')){
+          target=decodeURIComponent(dest.pathname.slice('/distributed-systems-notes/'.length));
+        } else return;
+        const section=dest.hash.startsWith('#')?dest.hash.slice(1):'';
+        const canonical=legacyPaths[target]||target;
+        if(topics.some(t=>t[1]===canonical)){
+          a.setAttribute('href',href(canonical)+(section?'?section='+encodeURIComponent(section):''));
+        } else if(canonical.endsWith('.md')){
+          // An article not indexed by the library still gets a valid GitHub link.
+          a.setAttribute('href','https://github.com/jayeshsharma2605/distributed-systems-notes/blob/main/'+canonical);
+        }
+      });
+    }
     function scrollToSection(slug=getSection()){
       if(!slug)return false;
       const heading=article.querySelectorAll('[id]');
@@ -220,7 +249,7 @@
         const raw=await response.text();
         if(current!==revision)return;
         if(!window.marked)throw new Error('Markdown renderer failed to load. Refresh the page to try again.');
-        article.innerHTML=parseMarkdown(raw);wrapTables();prepareSectionLinks(t);
+        article.innerHTML=parseMarkdown(raw);wrapTables();prepareSectionLinks(t);prepareArticleLinks(t);
         try{await mermaid.run({nodes:article.querySelectorAll('.mermaid')})}
         catch(e){console.warn('One or more diagrams could not render:',e)}
         if(getSection())scrollToSection();else window.scrollTo({top:0,behavior:'instant'});
