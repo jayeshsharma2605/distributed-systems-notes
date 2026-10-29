@@ -4,7 +4,6 @@
 
 **A step-by-step system design guide: how millions of users receive chat messages, live scores, location changes and streaming updates reliably.**
 
-> Independently written educational material based on the user-provided real-time updates transcript. Explanations, examples and architecture diagrams are newly composed; additional production considerations are included to make the design practical.
 
 ## Contents
 
