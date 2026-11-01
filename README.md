@@ -38,6 +38,8 @@ A collection of easy-to-follow study notes about distributed systems and system 
 
 ## System Design Topics
 
+- [WhatsApp System Design — Explained Simply](WhatsApp_System_Design_Explained_Simply.md) — WebSockets, message delivery, presence, offline queues, groups and media.
+
 - [WhatsApp — System Design Exercise](WhatsApp_System_Design.md) — Simple one-to-one messaging, WebSockets, offline delivery, group fanout, message ordering and reliability.
 
 - [Counting at Scale — Distributed Counters, HyperLogLog and Trending](Counting_at_Scale_Distributed_Counters_and_Streaming.md) — Atomic and sharded counters, Redis, Kafka/Flink aggregates, exact ad clicks, HyperLogLog, Count-Min Sketch, sliding windows and top-K topics.
