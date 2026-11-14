@@ -38,11 +38,11 @@ A collection of easy-to-follow study notes about distributed systems and system 
 
 ## System Design Topics
 
-- [WhatsApp System Design — Explained Simply](WhatsApp_System_Design_Explained_Simply.md) — WebSockets, message delivery, presence, offline queues, groups and media.
+- [WhatsApp System Design — Explained Simply](Practical%20System%20Design/WhatsApp_System_Design_Explained_Simply.md) — WebSockets, message delivery, presence, offline queues, groups and media.
 
-- [WhatsApp — System Design Exercise](WhatsApp_System_Design.md) — Simple one-to-one messaging, WebSockets, offline delivery, group fanout, message ordering and reliability.
+- [WhatsApp — System Design Exercise](Practical%20System%20Design/WhatsApp_System_Design.md) — Simple one-to-one messaging, WebSockets, offline delivery, group fanout, message ordering and reliability.
 
-- [Live Comments System Design — Explained Simply](Live_Comments_System_Design_Explained_Simply.md) — WebSockets, room-based fanout, Redis Pub/Sub, Kafka, durable comment storage, ordering, pagination, reconnect recovery and capacity estimation.
+- [Live Comments System Design — Explained Simply](Practical%20System%20Design/Live_Comments_System_Design_Explained_Simply.md) — WebSockets, room-based fanout, Redis Pub/Sub, Kafka, durable comment storage, ordering, pagination, reconnect recovery and capacity estimation.
 
 - [Counting at Scale — Distributed Counters, HyperLogLog and Trending](Counting_at_Scale_Distributed_Counters_and_Streaming.md) — Atomic and sharded counters, Redis, Kafka/Flink aggregates, exact ad clicks, HyperLogLog, Count-Min Sketch, sliding windows and top-K topics.
 
@@ -84,7 +84,7 @@ A collection of easy-to-follow study notes about distributed systems and system 
 - [Handling Traffic Spikes in Distributed Systems](Handling_Traffic_Spikes_in_Distributed_Systems.md) — Spikes, autoscaling, CDN caching, queues, waiting rooms, rate limiting, overload control and resilient flash-sale design.
 - [System Design — Request Journey, APIs, Communication & Distributed Databases](Web_Request_Flow_APIs_and_Distributed_Systems.md) — DNS, TCP/UDP, HTTPS, REST APIs, idempotency, messaging, SQL/NoSQL, CAP theorem, and a notification system design exercise with Mermaid diagrams.
 - [Database Scaling, Consistency, Messaging & Resilience](Database_Scaling_Consistency_Messaging_and_Resilience.md) — Replication, sharding, consistency models, queues, pub/sub, retries, DLQs, failover and circuit breakers.
-- [URL Shortener — System Design Exercise](URL_Shortener_System_Design.md) — Requirements, QPS/storage estimates, APIs, read/write flows, database design and Base62 encoding.
+- [URL Shortener — System Design Exercise](Practical%20System%20Design/URL_Shortener_System_Design.md) — Requirements, QPS/storage estimates, APIs, read/write flows, database design and Base62 encoding.
 - [Back-of-the-Envelope Capacity Estimation](Back_of_the_Envelope_Capacity_Estimation.md) — Easy-to-remember numbers, simplified RPS maths, latency, storage, bandwidth, cache sizing, server capacity and worked examples.
 - [Consistent Hashing and Virtual Nodes](Consistent_Hashing_and_Virtual_Nodes.md) — Modulo hashing, hash-ring routing, server changes, vnodes, replicas, binary search and easy key-movement maths.
 - [CAP Theorem and PACELC](CAP_Theorem_and_PACELC.md) — Consistency, availability, partitions, CP/AP trade-offs, online-store examples, PACELC and interview revision.
