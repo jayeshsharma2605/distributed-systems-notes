@@ -4,8 +4,6 @@
 
 **A beginner-friendly system design guide to comments that appear live during a sports match, concert, livestream or online event.**
 
-> The publicly accessible introduction to [AlgoMaster's Design Live Comments](https://algomaster.io/learn/system-design-interviews/design-live-comments) describes the problem and highlights latency, fanout and ordering. The detailed article is premium-only. These notes are an independently written design based on the public problem statement and established distributed-systems patterns; they do not claim to reproduce the inaccessible sections.
-
 ## Contents
 
 - [1. What are live comments?](#1-what-are-live-comments)
