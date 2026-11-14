@@ -2,10 +2,6 @@
 
 *Distributed Systems Study Library · Author: Jayesh Sharma*
 
-**Beginner-friendly, independently written notes on real-time chat, WebSockets, online/offline delivery, presence, group fan-out, media, service discovery and failure recovery.**
-
-> Based on the publicly accessible Part 1 of the article “System Design Interview: Design WhatsApp” by Neo Kim and Hayk ([source](https://newsletter.systemdesign.one/p/whatsapp-system-design), December 8, 2025). The article's later sections are behind a subscription. This guide uses original explanations and diagrams. The sections explicitly marked **Additional design context** are independent extensions, not summaries of the paywalled text.
-
 ## Contents
 
 - [1. What are we designing?](#1-what-are-we-designing)
