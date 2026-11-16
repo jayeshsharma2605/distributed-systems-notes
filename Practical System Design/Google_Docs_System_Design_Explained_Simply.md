@@ -579,8 +579,6 @@ A simple interview narrative:
 - Reconcile offline edits; never blindly overwrite the cloud document with a stale local copy.
 
 ## 19. Further reading
-
-- [AlgoMaster — Design Google Docs](https://algomaster.io/learn/system-design-interviews/design-google-docs)
 - [Operational Transformation (OT)](https://en.wikipedia.org/wiki/Operational_transformation)
 - [Conflict-free Replicated Data Types (CRDTs)](https://crdt.tech/)
 
