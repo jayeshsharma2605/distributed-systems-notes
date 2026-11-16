@@ -1,8 +1,5 @@
 # Design Google Docs — Explained Simply
 
-> A practical system-design walkthrough of a cloud document editor where many people can edit the same document at the same time.
->
-> The goal is to understand the problem, the main components, and the important trade-offs—not to memorize a technology stack.
 
 ## 1. What are we building?
 
