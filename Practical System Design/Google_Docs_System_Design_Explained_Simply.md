@@ -583,5 +583,3 @@ A simple interview narrative:
 - [Conflict-free Replicated Data Types (CRDTs)](https://crdt.tech/)
 
 ---
-
-*Prepared by Jayesh Sharma. This is an original, simplified learning guide based on the publicly accessible requirements and capacity-estimation sections of the AlgoMaster article, supplemented with general system-design concepts. It is not a reproduction of the source article or a description of Google's internal architecture.*
